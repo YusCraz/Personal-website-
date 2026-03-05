@@ -1,14 +1,83 @@
-<html>
-  <head>
-    <title>CS 1030 Web Page Project</title>
-    <!-- Replace the content in the following line with your name. -->
-    <meta name="author" content="REPLACE WITH YOUR NAME">
-  </head>
-  <body>
-    <!-- Replace the lines in this body with your content. -->
-    <h1>CS 1030 - Web page Project</h1>
-    <img src="logo.png">
-    <p>Hello world!</p>
-    <p><a href="secondpage.html">More</a></p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aayush_Lohani_Resume</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; line-height: 1.4; color: #333; margin: 40px; }
+        .header { text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+        h1 { margin: 0; color: #2c3e50; text-transform: uppercase; font-size: 24pt; }
+        .contact-info { font-size: 10pt; margin-top: 5px; }
+        h3 { border-bottom: 1px solid #bdc3c7; color: #2c3e50; margin-top: 15px; margin-bottom: 5px; text-transform: uppercase; font-size: 12pt; }
+        .summary { font-size: 10.5pt; font-style: italic; }
+        ul { margin-top: 5px; margin-bottom: 5px; padding-left: 20px; }
+        li { font-size: 10pt; margin-bottom: 3px; }
+        .job-title { font-weight: bold; display: flex; justify-content: space-between; font-size: 10.5pt; }
+        .skills-grid { font-size: 10pt; }
+        .project-item { margin-bottom: 8px; }
+        @media print { body { margin: 20px; } .header { border-bottom: 2px solid #000; } }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>AAYUSH LOHANI</h1>
+        <div class="contact-info">
+            Aurora, CO 80018 | 303-667-0078 | aayushlohani09@gmail.com<br>
+            <strong>GitHub:</strong> github.com/YusCraz | <strong>LinkedIn:</strong> linkedin.com/in/aayushlohani
+        </div>
+    </div>
+
+    <h3>Summary</h3>
+    <p class="summary">
+        Computer Science undergraduate specializing in <strong>Cybersecurity and Linux Systems Administration</strong>. Proven ability to defend enterprise-level networks under high pressure through <strong>CCDC competitions</strong>. Seeking a Cybersecurity or SOC Analyst Internship to apply hands-on experience in threat detection, system hardening, and incident response.
+    </p>
+
+    <h3>Technical Skills</h3>
+    <div class="skills-grid">
+        <strong>Security:</strong> SOC Fundamentals, Incident Response, Vulnerability Identification, System Hardening (Linux/Unix), Log Analysis, CCDC Defensive Operations.<br>
+        <strong>Tools:</strong> Linux (Ubuntu/Debian/CentOS), Nmap, Git/GitHub, Wireshark, <strong>Tailscale (Zero-Trust Mesh Networking)</strong>.<br>
+        <strong>Programming:</strong> Python (Security Scripting & Automation), Data Structures & Algorithms.
+    </div>
+
+    <h3>Cybersecurity Experience</h3>
+    <div class="job-title">
+        <span>CCDC-Style Defense Exercises | Qualifying Round Participant</span>
+        <span>2026</span>
+    </div>
+    <ul>
+        <li><strong>Network Defense:</strong> Successfully maintained 99.9% uptime for critical enterprise services (DNS, Web, Mail) during simulated active adversary attacks.</li>
+        <li><strong>Threat Remediation:</strong> Identified and remediated unauthorized misconfigurations, backdoors, and suspicious activity in real-time.</li>
+        <li><strong>System Hardening:</strong> Applied industry-standard security benchmarks to Linux systems to significantly reduce attack surfaces.</li>
+        <li><strong>Incident Response:</strong> Documented and reported security breaches under high-pressure, time-sensitive conditions.</li>
+    </ul>
+
+    <h3>Technical Projects</h3>
+    <div class="project-item">
+        <strong>Secure Virtual Home Lab (Networking & Security)</strong>
+        <ul>
+            <li>Architected a private network environment using <strong>Tailscale</strong> and <strong>loopback (127.0.0.1)</strong> configurations to safely test security tools without exposing systems to the public LAN/WAN.</li>
+        </ul>
+    </div>
+    <div class="project-item">
+        <strong>Python-Based Security Tooling</strong>
+        <ul>
+            <li>Developed command-line applications featuring robust input validation and logical flow to automate routine system security audits.</li>
+        </ul>
+    </div>
+
+    <h3>Education</h3>
+    <div class="job-title">
+        <span>Metropolitan State University of Denver</span>
+        <span>Denver, CO</span>
+    </div>
+    <div class="job-title">
+        <span>Bachelor of Science in Computer Science</span>
+        <span>Aug 2024 – Present</span>
+    </div>
+    <ul>
+        <li><strong>Relevant Coursework:</strong> Linux & Systems Fundamentals, Data Structures & Algorithms, CS 1 & 2.</li>
+    </ul>
+
+</body>
 </html>
