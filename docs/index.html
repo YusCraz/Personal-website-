@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aayush Lohani | Cybersecurity Portfolio</title>
+    <title>Aayush Lohani | Portfolio</title>
     <style>
         :root {
-            --primary: #2c3e50;
-            --accent: #27ae60;
+            --primary: #2c3e50; /* Dark Slate from your image */
+            --accent: #27ae60;  /* Green from your image */
             --mint: #b2dfdb; 
             --white: #ffffff;
         }
@@ -17,31 +17,40 @@
             background-color: var(--mint); 
             margin: 0; 
             padding: 0; 
-            color: #333; 
+            color: #333;
         }
 
-        /* NEW: Navigation Bar to make pages obvious */
+        /* Nav Bar - Styled like your second image */
         nav {
-            background: var(--primary);
-            padding: 15px 0;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            background-color: var(--primary);
+            height: 60px;
+            display: flex;
+            justify-content: flex-end; /* Pushes links to the right */
+            align-items: center;
+            padding: 0 50px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
+
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
+            margin-left: 30px;
             font-weight: bold;
             font-size: 1.1rem;
-            text-transform: uppercase;
             transition: color 0.3s;
         }
-        nav a:hover { color: var(--accent); }
-        nav a.active { border-bottom: 2px solid var(--accent); padding-bottom: 5px; }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a.active {
+            color: white; /* Matches 'Home' in your image */
+        }
 
         .container { 
-            max-width: 800px; 
-            margin: 60px auto; 
+            max-width: 850px; 
+            margin: 50px auto; 
             background: var(--white);
             padding: 50px;
             border-radius: 20px;
@@ -64,11 +73,34 @@
         }
 
         h1 { color: var(--primary); font-size: 2.5rem; margin-bottom: 10px; }
-        .summary-text { font-size: 1.25rem; line-height: 1.7; color: #444; margin-bottom: 30px; }
+        .summary-text { font-size: 1.2rem; line-height: 1.6; color: #444; margin-bottom: 30px; }
+
+        /* Projects List - Replacing the boxed text */
+        .project-list {
+            text-align: left;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
+        }
+
+        .project-item {
+            margin-bottom: 25px;
+        }
+
+        .project-item h3 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .project-item p {
+            margin: 0;
+            color: #666;
+            font-size: 1rem;
+        }
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             font-size: 0.85rem;
             color: #556b69;
         }
@@ -78,7 +110,7 @@
 
     <nav>
         <a href="index.html" class="active">Home</a>
-        <a href="resume.html">Resume</a>
+        <a href="resume.html" style="color: var(--accent);">Resume</a>
     </nav>
 
     <div class="container">
@@ -86,9 +118,27 @@
         <h1>Aayush Lohani</h1>
         <p class="summary-text">
             Computer Science student at <strong>MSU Denver</strong> specializing in <strong>Cybersecurity and Linux Administration</strong>. 
-            Focused on <strong>CCDC competitions</strong> and building secure, automated tools.
+            Focused on defending enterprise networks and building automated security tools.
         </p>
-        <p><em>Click "Resume" in the menu above to see my full experience.</em></p>
+
+        <div class="project-list">
+            <h2 style="text-align: center; color: var(--primary);">Technical Projects</h2>
+            
+            <div class="project-item">
+                <h3>⚡ Web Scraper Tool</h3>
+                <p>Automated data extraction engine built in Python to parse complex HTML and organize unstructured web data.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>🛡️ Secure Home Lab</h3>
+                <p>Private network architecture using Tailscale and loopback binds for safe security tool testing.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>🔍 Security Audit Scripts</h3>
+                <p>Custom Python and Bash scripts for identifying system misconfigurations and hardening Linux environments.</p>
+            </div>
+        </div>
     </div>
 
     <footer>
