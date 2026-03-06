@@ -3,36 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aayush Lohani | Home</title>
+    <title>Aayush Lohani | Cybersecurity Portfolio</title>
     <style>
         :root {
             --primary: #2c3e50;
             --accent: #27ae60;
-            --mint: #b2dfdb; /* Your Blue Mint color */
+            --mint: #b2dfdb; 
             --white: #ffffff;
         }
+        
         body { 
             font-family: 'Segoe UI', Arial, sans-serif; 
             background-color: var(--mint); 
             margin: 0; 
-            padding: 60px 20px; 
+            padding: 0; 
             color: #333; 
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            text-align: center;
         }
+
+        /* NEW: Navigation Bar to make pages obvious */
+        nav {
+            background: var(--primary);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: var(--accent); }
+        nav a.active { border-bottom: 2px solid var(--accent); padding-bottom: 5px; }
+
         .container { 
             max-width: 800px; 
-            margin: auto; 
+            margin: 60px auto; 
             background: var(--white);
             padding: 50px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            flex: 1;
+            text-align: center;
         }
 
-        /* This replaces the logo.png image */
         .digital-logo {
             width: 100px;
             height: 100px;
@@ -45,32 +61,13 @@
             font-size: 2.5rem;
             font-weight: bold;
             margin: 0 auto 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
         h1 { color: var(--primary); font-size: 2.5rem; margin-bottom: 10px; }
-        .summary-text { 
-            font-size: 1.25rem; 
-            line-height: 1.7; 
-            color: #444; 
-            margin-bottom: 30px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 15px 35px;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: transform 0.2s, background 0.2s;
-        }
-        .btn:hover {
-            background: var(--accent);
-            transform: scale(1.05);
-        }
+        .summary-text { font-size: 1.25rem; line-height: 1.7; color: #444; margin-bottom: 30px; }
+
         footer {
-            margin-top: 40px;
+            text-align: center;
             padding: 20px;
             font-size: 0.85rem;
             color: #556b69;
@@ -79,15 +76,19 @@
 </head>
 <body>
 
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="resume.html">Resume</a>
+    </nav>
+
     <div class="container">
         <div class="digital-logo">AL</div>
-        
         <h1>Aayush Lohani</h1>
         <p class="summary-text">
             Computer Science student at <strong>MSU Denver</strong> specializing in <strong>Cybersecurity and Linux Administration</strong>. 
-            Passionate about defending networks through <strong>CCDC competitions</strong> and building automated security tools like Web Scrapers to solve complex data challenges.
+            Focused on <strong>CCDC competitions</strong> and building secure, automated tools.
         </p>
-        <a href="resume.html" class="btn">View My Professional Resume</a>
+        <p><em>Click "Resume" in the menu above to see my full experience.</em></p>
     </div>
 
     <footer>
