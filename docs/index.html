@@ -8,7 +8,7 @@
         :root {
             --primary: #2c3e50;
             --accent: #27ae60;
-            --mint: #b2dfdb; /* Blue Mint */
+            --mint: #b2dfdb; /* Your Blue Mint color */
             --white: #ffffff;
         }
         body { 
@@ -31,12 +31,23 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             flex: 1;
         }
-        .team-logo { 
-            width: 130px; 
-            height: auto; 
-            margin-bottom: 25px; 
-            filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.1));
+
+        /* This replaces the logo.png image */
+        .digital-logo {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0 auto 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
+
         h1 { color: var(--primary); font-size: 2.5rem; margin-bottom: 10px; }
         .summary-text { 
             font-size: 1.25rem; 
@@ -69,7 +80,8 @@
 <body>
 
     <div class="container">
-        <img src="logo.png" alt="Logo" class="team-logo">
+        <div class="digital-logo">AL</div>
+        
         <h1>Aayush Lohani</h1>
         <p class="summary-text">
             Computer Science student at <strong>MSU Denver</strong> specializing in <strong>Cybersecurity and Linux Administration</strong>. 
